@@ -12,8 +12,8 @@ class Config(object):
     ADMINS = ['cocchi.e89@gmail.com']
     MAIL_SERVER = os.environ.get('MAIL_SERVER') or 'smtp.gmail.com'
     MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25) or 587
-    MAIL_USE_TLS = bool( int( os.environ.get('MAIL_USE_TLS') ) ) or True
-    MAIL_USE_SSL = bool( int( os.environ.get('MAIL_USE_SSL') ) ) or False
+    MAIL_USE_TLS = bool( int( os.environ.get('MAIL_USE_TLS') or 1 ) )
+    MAIL_USE_SSL = bool( int( os.environ.get('MAIL_USE_SSL') or 0 ) )
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or 'random-user'
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or 'random-user-secret-password'
     BASEDIR = os.path.abspath(os.path.dirname(__file__))
