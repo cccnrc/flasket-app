@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<style>
+
+  h2 {
+    font-weight: bold;
+    color: red;
+    font-size: 250%;
+    font-family: monospace;
+  }
+
+  h3 {
+    color: red;
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  body {
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    vertical-align: middle;
+  }
+
+  div.index {
+    text-align: left;
+    font-size: 150%;
+  }
+
+  a {
+    color: red;
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  li.index {
+    font-size: 80%;
+    color: lightgrey;
+    font-family: monospace;
+    margin-left: 3%;
+  }
+
+  div.title-container {
+    text-align: center;
+  }
+
+</style>
+
+<body>
+  <div class="index">
+    <div class="title-container">
+      <h2>Flasket Installation</h2>
+    </div>
+    <br>
+    <a href="https://github.com/cccnrc/flasket" target="_blank">Flasket</a>
+      is a <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a>-based app for ticketing system
+    <br>
+    <br>
+    <a href="https://github.com/cccnrc/flasket-app">Flasket</a>
+      can be deployed in two main ways:
+      <br>
+      <li class="index">integrate with your existing application:
+        <a href="https://github.com/cccnrc/flasket" target="_blank">Flasket</a>
+      </li>
+      <li class="index">standalone application: <a href="https://github.com/cccnrc/flasket-app" target="_blank">Flasket-App</a></li>
+      <br>
+      <h3><stream style="color: white; font-weight: normal;">1.</stream><a href="https://github.com/cccnrc/flasket" target="_blank">Flasket</a></h3>
+        The advantage of <a href="https://github.com/cccnrc/flasket" target="_blank">Flasket</a>
+        is that you integrate this ticketing system with your existing application:
+        <li class="index">only registered users will be able to submit and interact with tickets, avoiding bots, spam, etc.</li>
+        <li class="index">your website will serve the ticketing system as its own service, you are not redirected to a different website etc.</li>
+        <li class="index">e-mail updates are sent to users for every ticket important activity, and these mails will come from your website, not external servers etc.</li>
+        <li class="index">you can edit tickets as you wish to best reflect your application needs</li>
+        <li class="index">extremely easy to integrate and update as it lives in a dedicated folder within your application</li>
+      <br>
+      <h3><stream style="color: white; font-weight: normal;">2.</stream><a href="https://github.com/cccnrc/flasket-app" target="_blank">Flasket-App</a></h3>
+        The advantage of <a href="https://github.com/cccnrc/flasket-app" target="_blank">Flasket-App</a>
+        is that you deploy it as it comes and you are ready to go:
+        <li class="index">very little setup work</li>
+        <li class="index">database, imports, etc. already configured</li>
+        <li class="index">you can shape your application deployment around this "skeleton"</li>
+        <li class="index">very detailed instructions for <a href="#">local</a> and <a href="#">server</a> setup</li>
+
+  </div>
+</body>
+
+{% endblock %}

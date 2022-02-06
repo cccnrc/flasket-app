@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<style>
+  h1 {
+    font-weight: bold;
+    color: red;
+    font-size: 630%;
+    font-family: monospace;
+  }
+</style>
+
+<body style="text-align: center; background-color: #404040; color: white; vertical-align: middle;"
+  <div style="text-align: center; ">
+    <br>
+    <h1>Flasket</h1>
+    <h4>A ticekting service for your Flask application</h4>
+    <br>
+    <img style="margin-top: 0%; max-width: 40%; max-height: 40%;" src="{{ url_for('static', filename='flasket-logo.png') }}"></img>
+    <br>
+    <br>
+    <br>
+    <h2>
+      <a style="font-weight: bold; color: red; font-size: 110%;" href="{{ url_for('auth.register') }}" target="_blank">Register</a>
+        and try <a style="font-weight: bold; color: red; font-size: 110%;" href="{{ url_for('ticket.index')}}">Flasket</a>
+      (<a style="font-weight: bold; color: red; font-size: 110%;" href="{{ url_for('documentation.index')}}">Doc</a>)
+    </h2>
+  </div>
+</body>
+
+{% endblock %}

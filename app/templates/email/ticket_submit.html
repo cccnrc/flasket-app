@@ -1,0 +1,16 @@
+<p>Dear {{ user.username }},</p>
+<p>
+  You just submitted a Ticket:
+    <a href="{{ url_for('ticket.ticket_reply', ticket_ID = ticket.id, _external=True) }}">
+        {{ ticket.title }}
+    </a>.
+</p>
+<br>
+You will be notified at this email address ({{ user.email }}) regarding any future activity of this ticket.
+<br>
+<p>Alternatively, you can paste the following link in your browser's address bar:</p>
+<p>{{ url_for('ticket.ticket_reply', ticket_ID = ticket.id, _external=True) }}</p>
+<br>
+<br>
+<p>Sincerely,</p>
+<p>The Flasket Team</p>
