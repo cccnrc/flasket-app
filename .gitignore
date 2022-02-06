@@ -2,6 +2,9 @@
 README-AWS.md
 README-CERTIFICATE.md
 
+### secret variables
+flasket.service
+
 ### local virtual environment
 venv
 .flaskenv
