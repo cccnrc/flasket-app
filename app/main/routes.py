@@ -20,7 +20,7 @@ def before_request():
 @bp.route('/')
 @bp.route('/index')
 def index():
-    return( render_template( 'index.html' ) )
+    return( render_template( 'index.html', SERVER_NAME = current_app.config['SERVER_NAME'] ))
 
 '''
 @bp.route('/download/<path:filename>')

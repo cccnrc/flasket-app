@@ -25,5 +25,5 @@ class Config(object):
     SES_REGION_NAME = os.environ.get('SES_REGION_NAME') or 'aws-random-region'
     SES_EMAIL_SOURCE = os.environ.get('SES_EMAIL_SOURCE') or 'SES'
     CREDENTIALS_URL = os.environ.get('CREDENTIALS_URL') or 'https://super-secret'
-    SERVER_NAME = os.environ.get('SERVER_NAME') or '127.0.0.7:7000'
+    SERVER_NAME = os.environ.get('SERVER_NAME') or 'https://flasket.net'
     LOCAL_DEVELOPMENT = os.environ.get('LOCAL_DEVELOPMENT') or 0
