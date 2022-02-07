@@ -1,4 +1,4 @@
-bind = ':8001'
+bind = ':7000'
 worker_class = 'sync'
 loglevel = 'debug'
 accesslog = '/var/www/flasket.net/logs/flasket_access.log'
